@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .bg-rose-gold-gradient {
+    background: linear-gradient(135deg, #E0A96D 0%, #C88A4B 50%, #B8733E 100%);
+  }
+  
+  .bg-rose-gold-subtle {
+    background: linear-gradient(135deg, #FFF9F3 0%, #F5EAE0 100%);
+  }
+
+  .bg-charcoal-gradient {
+    background: linear-gradient(180deg, #24201D 0%, #151312 100%);
+  }
+
+  .text-rose-gold {
+    color: #C88A4B;
+  }
+
+  .text-rose-gold-light {
+    color: #E0A96D;
+  }
+
+  .text-gradient-rose {
+    background: linear-gradient(135deg, #D99554 0%, #B8733E 50%, #8C532B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #F3D0A3 0%, #E0A96D 50%, #C88A4B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .border-rose-gold {
+    border-color: rgba(224, 169, 109, 0.4);
+  }
+
+  .shadow-rose-gold {
+    box-shadow: 0 10px 30px -5px rgba(200, 138, 75, 0.18);
+  }
+}
